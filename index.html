@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Dramas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Global Dramas</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for dramas...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">Popular</a>
+                <a href="#">New Releases</a>
+                <a href="#">My List</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured-videos">
+            <h2>Trending Movies 2025</h2>
+            <div class="video-slider">
+                <!-- Bollywood Section -->
+                <div class="video-category">
+                    <h3>Bollywood Blockbusters</h3>
+                    <div class="slider-container">
+                        <button class="slider-nav prev" onclick="slideVideos('bollywood', 'prev')">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="video-grid bollywood-slider">
+                            <div class="video-card" data-trailer-id="tGpTpVyI_OQ">
+                                <div class="video-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/tGpTpVyI_OQ/maxresdefault.jpg" alt="Pathaan">
+                                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                                </div>
+                                <h4>Pathaan</h4>
+                                <p>Action, Thriller</p>
+                            </div>
+                            <div class="video-card" data-trailer-id="Y1wYgqUkqG8">
+                                <div class="video-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/Y1wYgqUkqG8/maxresdefault.jpg" alt="Jawan">
+                                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                                </div>
+                                <h4>Jawan</h4>
+                                <p>Action, Drama</p>
+                            </div>
+                            <div class="video-card" data-trailer-id="mOHY_0qBm8U">
+                                <div class="video-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/mOHY_0qBm8U/maxresdefault.jpg" alt="Animal">
+                                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                                </div>
+                                <h4>Animal</h4>
+                                <p>Action, Crime</p>
+                            </div>
+                        </div>
+                        <button class="slider-nav next" onclick="slideVideos('bollywood', 'next')">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- K-Dramas Section -->
+                <div class="video-category">
+                    <h3>Popular K-Dramas</h3>
+                    <div class="slider-container">
+                        <button class="slider-nav prev" onclick="slideVideos('kdrama', 'prev')">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="video-grid kdrama-slider">
+                            <div class="video-card" data-trailer-id="dISNgvVpWlo">
+                                <div class="video-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/dISNgvVpWlo/maxresdefault.jpg" alt="Crash Landing on You">
+                                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                                </div>
+                                <h4>Crash Landing on You</h4>
+                                <p>Romance, Drama</p>
+                            </div>
+                            <div class="video-card" data-trailer-id="GJB66IwZGFY">
+                                <div class="video-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/GJB66IwZGFY/maxresdefault.jpg" alt="Squid Game">
+                                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                                </div>
+                                <h4>Squid Game</h4>
+                                <p>Thriller, Action</p>
+                            </div>
+                            <div class="video-card" data-trailer-id="eX2qFMC8cFo">
+                                <div class="video-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/eX2qFMC8cFo/maxresdefault.jpg" alt="Goblin">
+                                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                                </div>
+                                <h4>Goblin</h4>
+                                <p>Fantasy, Romance</p>
+                            </div>
+                        </div>
+                        <button class="slider-nav next" onclick="slideVideos('kdrama', 'next')">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Telugu Movies Section -->
+                <div class="video-category">
+                    <h3>Latest Telugu Movies</h3>
+                    <div class="slider-container">
+                        <button class="slider-nav prev" onclick="slideVideos('telugu', 'prev')">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="video-grid telugu-slider">
+                            <div class="video-card" data-trailer-id="f_vbAtiSEYw">
+                                <div class="video-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/f_vbAtiSEYw/maxresdefault.jpg" alt="RRR">
+                                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                                </div>
+                                <h4>RRR</h4>
+                                <p>Action, Drama</p>
+                            </div>
+                            <div class="video-card" data-trailer-id="Q1NKMPhp8JI">
+                                <div class="video-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/Q1NKMPhp8JI/maxresdefault.jpg" alt="Pushpa">
+                                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                                </div>
+                                <h4>Pushpa</h4>
+                                <p>Action, Thriller</p>
+                            </div>
+                            <div class="video-card" data-trailer-id="5m4h7qoCbXg">
+                                <div class="video-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/5m4h7qoCbXg/maxresdefault.jpg" alt="Baahubali">
+                                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                                </div>
+                                <h4>Baahubali</h4>
+                                <p>Action, Fantasy</p>
+                            </div>
+                        </div>
+                        <button class="slider-nav next" onclick="slideVideos('telugu', 'next')">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2>Welcome to Global Dramas</h2>
+                <p>Watch your favorite dramas from around the world</p>
+                <div class="hero-stars">
+                    <div class="star-card">
+                        <div class="movie-name">Baahubali</div>
+                        <span>Prabhas</span>
+                    </div>
+                    <div class="star-card">
+                        <div class="movie-name">RRR</div>
+                        <span>Ram Charan</span>
+                    </div>
+                    <div class="star-card">
+                        <div class="movie-name">RRR</div>
+                        <span>NTR</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Dramas</h2>
+            <div class="drama-grid" id="featuredDramas">
+                <!-- Drama cards will be added dynamically -->
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>Categories</h2>
+            <div class="category-grid">
+                <div class="category-card">Romance</div>
+                <div class="category-card">Action</div>
+                <div class="category-card">Comedy</div>
+                <div class="category-card">Fantasy</div>
+                <div class="category-card">Historical</div>
+                <div class="category-card">Thriller</div>
+                <div class="category-card">Music</div>
+            </div>
+        </section>
+
+        <section class="subscription-plans">
+            <h2>Choose Your Plan</h2>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3>Basic</h3>
+                    <div class="price">$9.99<span>/month</span></div>
+                    <ul>
+                        <li>HD Quality</li>
+                        <li>Watch on 1 device</li>
+                        <li>Limited content access</li>
+                    </ul>
+                    <button class="subscribe-btn" data-plan="basic">Subscribe Now</button>
+                </div>
+                <div class="plan-card featured">
+                    <h3>Premium</h3>
+                    <div class="price">$14.99<span>/month</span></div>
+                    <ul>
+                        <li>4K Ultra HD</li>
+                        <li>Watch on 4 devices</li>
+                        <li>Full content access</li>
+                        <li>Download content</li>
+                    </ul>
+                    <button class="subscribe-btn" data-plan="premium">Subscribe Now</button>
+                </div>
+                <div class="plan-card">
+                    <h3>Family</h3>
+                    <div class="price">$19.99<span>/month</span></div>
+                    <ul>
+                        <li>4K Ultra HD</li>
+                        <li>Watch on 6 devices</li>
+                        <li>Full content access</li>
+                        <li>Download content</li>
+                        <li>Kids profile</li>
+                    </ul>
+                    <button class="subscribe-btn" data-plan="family">Subscribe Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="payment-methods">
+            <h2>Payment Methods</h2>
+            <div class="payment-options">
+                <div class="payment-card">
+                    <i class="fab fa-cc-visa"></i>
+                    <span>Visa</span>
+                </div>
+                <div class="payment-card">
+                    <i class="fab fa-cc-mastercard"></i>
+                    <span>Mastercard</span>
+                </div>
+                <div class="payment-card">
+                    <i class="fab fa-cc-paypal"></i>
+                    <span>PayPal</span>
+                </div>
+                <div class="payment-card">
+                    <i class="fab fa-cc-apple-pay"></i>
+                    <span>Apple Pay</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Trailer Modal -->
+    <div class="modal" id="trailerModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe id="trailerVideo" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="modal" id="paymentModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Complete Your Subscription</h2>
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiryDate">Expiry Date</label>
+                    <input type="text" id="expiryDate" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" placeholder="123" required>
+                </div>
+                <button type="submit" class="pay-btn">Pay Now</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Global Dramas. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
